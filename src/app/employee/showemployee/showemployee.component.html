@@ -1,0 +1,31 @@
+<p>
+  showemployee works!
+</p>
+<!-- <h4>Using routerLink</h4>
+<div *ngFor="let emp of empDetails">
+<a style="color: grey" routerLink="{{emp.id}}">{{emp.name}}</a>
+</div><pre></pre>
+ -->
+ <h4>Using navigator</h4>
+<table>
+	<tr>
+		<th>Employee Name</th>
+		<th>Employee Age</th>
+		<th>Employee Dept</th>
+		<th>Edit</th>
+		<th>Delete</th>
+	</tr>
+	<tr *ngFor="let employee of employeeList; index as index">
+		<td>
+			<a href="javascript:void(0)" (click)="getEmp(employee)">{{employee.name}}</a>
+		</td>
+		<td>
+			{{employee.age}}
+		</td>
+		<td>
+			{{employee.dept}}
+		</td>
+		<td><a href="javascript:void(0)" (click)="editEmployee(employee)">Edit</a></td>
+		<td><a href="javascript:void(0)" (click)="delEmployee(employee)">Delete</a></td>
+	</tr>
+</table>

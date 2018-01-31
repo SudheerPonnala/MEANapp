@@ -1,0 +1,14 @@
+<p>
+  empbyid works!
+</p>
+<div *ngIf="finalEmp">
+	<h3>Welcome {{finalEmp.name}}...</h3>
+	<p>{{finalEmp.age}}</p>
+	<p>{{finalEmp.dept}}</p>
+	<!-- <img style="height: 100px;width: 100px" bind-src="finalEmp.src" alt="Image link not provided"> -->
+
+	<!-- <img style="height: 100px;width: 100px" [src]="finalEmp.src" alt="Image link not provided"> -->
+
+	<!-- <img style="height: 100px;width: 100px" src="{{finalEmp.src}}" alt="Image link not provided"> -->
+</div>
+<!-- <h3 *ngIf="_empName">Welcome {{_empName}}...</h3> -->
